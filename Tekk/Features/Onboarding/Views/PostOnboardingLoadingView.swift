@@ -76,6 +76,7 @@ struct PostOnboardingLoadingView: View {
                 DispatchQueue.main.async {
                     isLoading = false
                     showNextScreen = true
+                    isLoggedIn = true
                 }
                 print("✅ Onboarding data submitted successfully")
             } catch {

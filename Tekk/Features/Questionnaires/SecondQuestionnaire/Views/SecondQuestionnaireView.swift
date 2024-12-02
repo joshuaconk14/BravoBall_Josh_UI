@@ -18,6 +18,7 @@ struct SecondQuestionnaireView: View {
     // questionnaires state variables
     @State private var currentQuestionnaireTwo: Int = 0
     @State private var showQuestionnaire = false // need ?
+    @State private var showHomeProgramView = false
     @State private var textOpacity0: Double = 1.0
     @State private var textOpacity1: Double = 0.0
     @State private var textOpacity2: Double = 0.0
@@ -242,6 +243,9 @@ struct SecondQuestionnaireView: View {
                 trainingDays: chosenDays
             )
             submitOnboardingData()
+//            withAnimation {
+//                showHomeProgramView = true  <#code#>
+//            }
             // TODO: Handle navigation after successful submission
         }
     }
