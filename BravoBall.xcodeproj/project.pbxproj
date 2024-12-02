@@ -1,0 +1,987 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		170217BB2C89030500DD020C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170217BA2C89030400DD020C /* Models.swift */; };
+		173B40212CD6F501003C560D /* OnboardingStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B40202CD6F501003C560D /* OnboardingStateManager.swift */; };
+		173B40242CD6F55A003C560D /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B40232CD6F55A003C560D /* OnboardingData.swift */; };
+		1749361C2C3E102B001163B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749361B2C3E102B001163B9 /* ContentView.swift */; };
+		1749361E2C3E1031001163B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1749361D2C3E1031001163B9 /* Assets.xcassets */; };
+		174936222C3E1031001163B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174936212C3E1031001163B9 /* Preview Assets.xcassets */; };
+		1749362C2C3E1032001163B9 /* TekkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749362B2C3E1032001163B9 /* TekkTests.swift */; };
+		174936362C3E1032001163B9 /* TekkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174936352C3E1032001163B9 /* TekkUITests.swift */; };
+		174936382C3E1032001163B9 /* TekkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174936372C3E1032001163B9 /* TekkUITestsLaunchTests.swift */; };
+		175049412CDD69B00030CF3E /* SelectAgeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175049402CDD69B00030CF3E /* SelectAgeRange.swift */; };
+		175049432CDD69CC0030CF3E /* SelectPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175049422CDD69CC0030CF3E /* SelectPosition.swift */; };
+		175049452CDD69DD0030CF3E /* SelectLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175049442CDD69DD0030CF3E /* SelectLevel.swift */; };
+		175049472CDD6A170030CF3E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175049462CDD6A170030CF3E /* WelcomeView.swift */; };
+		176D15012CD4799C00450F85 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D15002CD4799C00450F85 /* LoginView.swift */; };
+		176D15052CD4907000450F85 /* PickGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D15042CD4907000450F85 /* PickGoal.swift */; };
+		176D15082CD490E200450F85 /* YesNoTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D15072CD490E200450F85 /* YesNoTeam.swift */; };
+		179CF94F2CD7077F00D07E49 /* BravoBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CF94E2CD7077F00D07E49 /* BravoBall.swift */; };
+		179CF9522CD712CA00D07E49 /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CF9512CD712CA00D07E49 /* OnboardingService.swift */; };
+		179CF9562CD731B100D07E49 /* SelectionListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CF9552CD731B100D07E49 /* SelectionListItem.swift */; };
+		179CF9582CD731C400D07E49 /* DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CF9572CD731C400D07E49 /* DropdownMenu.swift */; };
+		179CF95A2CD731E200D07E49 /* SelectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CF9592CD731E200D07E49 /* SelectionListView.swift */; };
+		179CF9602CD7326500D07E49 /* PostOnboardingLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CF95F2CD7326500D07E49 /* PostOnboardingLoadingView.swift */; };
+		179CF9622CD74EC800D07E49 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CF9612CD74EC800D07E49 /* MainTabView.swift */; };
+		179D4FA92CD5E7DB00F7E4AB /* TrainingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D4FA82CD5E7DB00F7E4AB /* TrainingLevel.swift */; };
+		179D4FAB2CD5E7F900F7E4AB /* TimelineGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D4FAA2CD5E7F900F7E4AB /* TimelineGoal.swift */; };
+		179D4FAD2CD5E82800F7E4AB /* TrainingDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D4FAC2CD5E82800F7E4AB /* TrainingDays.swift */; };
+		17ACC8DC2CD3681B0047EE09 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACC8DB2CD3681B0047EE09 /* OnboardingView.swift */; };
+		17ACC8E82CD3696D0047EE09 /* FirstQuestionnaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACC8E72CD3696D0047EE09 /* FirstQuestionnaireView.swift */; };
+		17ACC8EA2CD369FF0047EE09 /* PlayerRepresentPlaystyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACC8E92CD369FF0047EE09 /* PlayerRepresentPlaystyle.swift */; };
+		17ACC8EC2CD36A4C0047EE09 /* PickWeaknesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACC8EB2CD36A4C0047EE09 /* PickWeaknesses.swift */; };
+		17ACC8EE2CD36A8A0047EE09 /* PickStrengths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACC8ED2CD36A8A0047EE09 /* PickStrengths.swift */; };
+		17ACC8F22CD36B060047EE09 /* SecondQuestionnaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACC8F12CD36B060047EE09 /* SecondQuestionnaireView.swift */; };
+		17C3A5352CD88D8800A64BC5 /* HomeProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3A5342CD88D8800A64BC5 /* HomeProgramView.swift */; };
+		17E6931A2C743662006B58A3 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E693192C743662006B58A3 /* CameraManager.swift */; };
+		17E6931E2C743ADC006B58A3 /* CMSampleBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E6931D2C743ADC006B58A3 /* CMSampleBuffer+Extension.swift */; };
+		17E693202C74560E006B58A3 /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E6931F2C74560E006B58A3 /* CIImage+Extension.swift */; };
+		17E693222C745811006B58A3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E693212C745811006B58A3 /* ViewModel.swift */; };
+		17F5D6542CD3477E008E8C24 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5D6532CD3477E008E8C24 /* ColorExtension.swift */; };
+		17F5D6562CD347AE008E8C24 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5D6552CD347AD008E8C24 /* GlobalSettings.swift */; };
+		435A70152CA7AB2600BFCC40 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 435A70142CA7AB2600BFCC40 /* RiveRuntime */; };
+		43985E3D2CB4EDD300BE2AB6 /* ChatbotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43985E3C2CB4EDCD00BE2AB6 /* ChatbotView.swift */; };
+		43985E3F2CB4EDE700BE2AB6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43985E3E2CB4EDE300BE2AB6 /* CameraView.swift */; };
+		43985E412CB4EE0200BE2AB6 /* PlayerDetailsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43985E402CB4EDF900BE2AB6 /* PlayerDetailsForm.swift */; };
+		43985E432CB4EE6800BE2AB6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43985E422CB4EE6000BE2AB6 /* SettingsView.swift */; };
+		43985E472CB4EFA200BE2AB6 /* tekk_intro.riv in Resources */ = {isa = PBXBuildFile; fileRef = 43985E462CB4EFA200BE2AB6 /* tekk_intro.riv */; };
+		43985E522CB51E1100BE2AB6 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43985E512CB51E1100BE2AB6 /* Poppins-Bold.ttf */; };
+		43985E542CB5A9A600BE2AB6 /* PottaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43985E532CB5A9A600BE2AB6 /* PottaOne-Regular.ttf */; };
+		43985E5A2CB5B0BB00BE2AB6 /* test_panting.riv in Resources */ = {isa = PBXBuildFile; fileRef = 43985E592CB5B0BB00BE2AB6 /* test_panting.riv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		174936282C3E1032001163B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1749360E2C3E102B001163B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 174936152C3E102B001163B9;
+			remoteInfo = Tekk;
+		};
+		174936322C3E1032001163B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1749360E2C3E102B001163B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 174936152C3E102B001163B9;
+			remoteInfo = Tekk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		170217BA2C89030400DD020C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		173B40202CD6F501003C560D /* OnboardingStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStateManager.swift; sourceTree = "<group>"; };
+		173B40232CD6F55A003C560D /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
+		174936162C3E102B001163B9 /* BravoBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BravoBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1749361B2C3E102B001163B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1749361D2C3E1031001163B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1749361F2C3E1031001163B9 /* Tekk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tekk.entitlements; sourceTree = "<group>"; };
+		174936212C3E1031001163B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		174936272C3E1032001163B9 /* BravoBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BravoBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1749362B2C3E1032001163B9 /* TekkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TekkTests.swift; sourceTree = "<group>"; };
+		174936312C3E1032001163B9 /* BravoBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BravoBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		174936352C3E1032001163B9 /* TekkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TekkUITests.swift; sourceTree = "<group>"; };
+		174936372C3E1032001163B9 /* TekkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TekkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		175049402CDD69B00030CF3E /* SelectAgeRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAgeRange.swift; sourceTree = "<group>"; };
+		175049422CDD69CC0030CF3E /* SelectPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPosition.swift; sourceTree = "<group>"; };
+		175049442CDD69DD0030CF3E /* SelectLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevel.swift; sourceTree = "<group>"; };
+		175049462CDD6A170030CF3E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		176D15002CD4799C00450F85 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		176D15042CD4907000450F85 /* PickGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickGoal.swift; sourceTree = "<group>"; };
+		176D15072CD490E200450F85 /* YesNoTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoTeam.swift; sourceTree = "<group>"; };
+		179CF94E2CD7077F00D07E49 /* BravoBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BravoBall.swift; sourceTree = "<group>"; };
+		179CF9512CD712CA00D07E49 /* OnboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingService.swift; sourceTree = "<group>"; };
+		179CF9552CD731B100D07E49 /* SelectionListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionListItem.swift; sourceTree = "<group>"; };
+		179CF9572CD731C400D07E49 /* DropdownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenu.swift; sourceTree = "<group>"; };
+		179CF9592CD731E200D07E49 /* SelectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionListView.swift; sourceTree = "<group>"; };
+		179CF95F2CD7326500D07E49 /* PostOnboardingLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostOnboardingLoadingView.swift; sourceTree = "<group>"; };
+		179CF9612CD74EC800D07E49 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		179D4FA82CD5E7DB00F7E4AB /* TrainingLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingLevel.swift; sourceTree = "<group>"; };
+		179D4FAA2CD5E7F900F7E4AB /* TimelineGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineGoal.swift; sourceTree = "<group>"; };
+		179D4FAC2CD5E82800F7E4AB /* TrainingDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDays.swift; sourceTree = "<group>"; };
+		17ACC8DB2CD3681B0047EE09 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		17ACC8E72CD3696D0047EE09 /* FirstQuestionnaireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestionnaireView.swift; sourceTree = "<group>"; };
+		17ACC8E92CD369FF0047EE09 /* PlayerRepresentPlaystyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRepresentPlaystyle.swift; sourceTree = "<group>"; };
+		17ACC8EB2CD36A4C0047EE09 /* PickWeaknesses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickWeaknesses.swift; sourceTree = "<group>"; };
+		17ACC8ED2CD36A8A0047EE09 /* PickStrengths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickStrengths.swift; sourceTree = "<group>"; };
+		17ACC8F12CD36B060047EE09 /* SecondQuestionnaireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionnaireView.swift; sourceTree = "<group>"; };
+		17C3A5342CD88D8800A64BC5 /* HomeProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProgramView.swift; sourceTree = "<group>"; };
+		17E693182C7435B3006B58A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17E693192C743662006B58A3 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		17E6931D2C743ADC006B58A3 /* CMSampleBuffer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+Extension.swift"; sourceTree = "<group>"; };
+		17E6931F2C74560E006B58A3 /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
+		17E693212C745811006B58A3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		17F5D6532CD3477E008E8C24 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		17F5D6552CD347AD008E8C24 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
+		43985E3C2CB4EDCD00BE2AB6 /* ChatbotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotView.swift; sourceTree = "<group>"; };
+		43985E3E2CB4EDE300BE2AB6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		43985E402CB4EDF900BE2AB6 /* PlayerDetailsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsForm.swift; sourceTree = "<group>"; };
+		43985E422CB4EE6000BE2AB6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		43985E462CB4EFA200BE2AB6 /* tekk_intro.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = tekk_intro.riv; sourceTree = "<group>"; };
+		43985E512CB51E1100BE2AB6 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		43985E532CB5A9A600BE2AB6 /* PottaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PottaOne-Regular.ttf"; sourceTree = "<group>"; };
+		43985E592CB5B0BB00BE2AB6 /* test_panting.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_panting.riv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		174936132C3E102B001163B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435A70152CA7AB2600BFCC40 /* RiveRuntime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174936242C3E1032001163B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1749362E2C3E1032001163B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		173B401F2CD6F4F6003C560D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				173B40202CD6F501003C560D /* OnboardingStateManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		173B40222CD6F547003C560D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				173B40232CD6F55A003C560D /* OnboardingData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1749360D2C3E102B001163B9 = {
+			isa = PBXGroup;
+			children = (
+				174936182C3E102B001163B9 /* Tekk */,
+				1749362A2C3E1032001163B9 /* TekkTests */,
+				174936342C3E1032001163B9 /* TekkUITests */,
+				174936172C3E102B001163B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		174936172C3E102B001163B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				174936162C3E102B001163B9 /* BravoBall.app */,
+				174936272C3E1032001163B9 /* BravoBallTests.xctest */,
+				174936312C3E1032001163B9 /* BravoBallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		174936182C3E102B001163B9 /* Tekk */ = {
+			isa = PBXGroup;
+			children = (
+				17E693182C7435B3006B58A3 /* Info.plist */,
+				174936442C3E10C4001163B9 /* Views */,
+				17E6931C2C743AC4006B58A3 /* Camera */,
+				170217BA2C89030400DD020C /* Models.swift */,
+				179CF94E2CD7077F00D07E49 /* BravoBall.swift */,
+				17ACC8D82CD367BA0047EE09 /* Features */,
+				17F5D6552CD347AD008E8C24 /* GlobalSettings.swift */,
+				179CF9532CD7318600D07E49 /* Common */,
+				17F5D6532CD3477E008E8C24 /* ColorExtension.swift */,
+				179CF9612CD74EC800D07E49 /* MainTabView.swift */,
+				1749361B2C3E102B001163B9 /* ContentView.swift */,
+				17CBE91A2CE09F230094DC58 /* Tests */,
+				1749361D2C3E1031001163B9 /* Assets.xcassets */,
+				43985E502CB51DEC00BE2AB6 /* Font */,
+				439A72632C9FA55700B4C5AD /* RiveAssets */,
+				1749361F2C3E1031001163B9 /* Tekk.entitlements */,
+				174936202C3E1031001163B9 /* Preview Content */,
+			);
+			path = Tekk;
+			sourceTree = "<group>";
+		};
+		174936202C3E1031001163B9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				174936212C3E1031001163B9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1749362A2C3E1032001163B9 /* TekkTests */ = {
+			isa = PBXGroup;
+			children = (
+				1749362B2C3E1032001163B9 /* TekkTests.swift */,
+			);
+			path = TekkTests;
+			sourceTree = "<group>";
+		};
+		174936342C3E1032001163B9 /* TekkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				174936352C3E1032001163B9 /* TekkUITests.swift */,
+				174936372C3E1032001163B9 /* TekkUITestsLaunchTests.swift */,
+			);
+			path = TekkUITests;
+			sourceTree = "<group>";
+		};
+		174936442C3E10C4001163B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43985E3C2CB4EDCD00BE2AB6 /* ChatbotView.swift */,
+				17C3A5342CD88D8800A64BC5 /* HomeProgramView.swift */,
+				43985E3E2CB4EDE300BE2AB6 /* CameraView.swift */,
+				43985E422CB4EE6000BE2AB6 /* SettingsView.swift */,
+				43985E402CB4EDF900BE2AB6 /* PlayerDetailsForm.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1750493F2CDD69A00030CF3E /* WelcomeQuestionnaire */ = {
+			isa = PBXGroup;
+			children = (
+				175049402CDD69B00030CF3E /* SelectAgeRange.swift */,
+				175049442CDD69DD0030CF3E /* SelectLevel.swift */,
+				175049462CDD6A170030CF3E /* WelcomeView.swift */,
+				175049422CDD69CC0030CF3E /* SelectPosition.swift */,
+			);
+			path = WelcomeQuestionnaire;
+			sourceTree = "<group>";
+		};
+		176D14FC2CD4794B00450F85 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				176D14FD2CD4795C00450F85 /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		176D14FD2CD4795C00450F85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				176D15002CD4799C00450F85 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		179CF9502CD712B500D07E49 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				179CF9512CD712CA00D07E49 /* OnboardingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		179CF9532CD7318600D07E49 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				179CF9542CD7319400D07E49 /* Components */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		179CF9542CD7319400D07E49 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				179CF9552CD731B100D07E49 /* SelectionListItem.swift */,
+				179CF9592CD731E200D07E49 /* SelectionListView.swift */,
+				179CF9572CD731C400D07E49 /* DropdownMenu.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		17ACC8D82CD367BA0047EE09 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				176D14FC2CD4794B00450F85 /* Login */,
+				17ACC8E42CD369350047EE09 /* Questionnaires */,
+				17ACC8D92CD367DD0047EE09 /* Onboarding */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		17ACC8D92CD367DD0047EE09 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				179CF9502CD712B500D07E49 /* Services */,
+				173B40222CD6F547003C560D /* Models */,
+				173B401F2CD6F4F6003C560D /* ViewModels */,
+				17ACC8DA2CD368070047EE09 /* Views */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		17ACC8DA2CD368070047EE09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17ACC8DB2CD3681B0047EE09 /* OnboardingView.swift */,
+				179CF95F2CD7326500D07E49 /* PostOnboardingLoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17ACC8E42CD369350047EE09 /* Questionnaires */ = {
+			isa = PBXGroup;
+			children = (
+				1750493F2CDD69A00030CF3E /* WelcomeQuestionnaire */,
+				17ACC8EF2CD36AEC0047EE09 /* SecondQuestionnaire */,
+				17ACC8E52CD3693D0047EE09 /* FirstQuestionnaire */,
+			);
+			path = Questionnaires;
+			sourceTree = "<group>";
+		};
+		17ACC8E52CD3693D0047EE09 /* FirstQuestionnaire */ = {
+			isa = PBXGroup;
+			children = (
+				17ACC8E62CD369530047EE09 /* Views */,
+			);
+			path = FirstQuestionnaire;
+			sourceTree = "<group>";
+		};
+		17ACC8E62CD369530047EE09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17ACC8E72CD3696D0047EE09 /* FirstQuestionnaireView.swift */,
+				17ACC8E92CD369FF0047EE09 /* PlayerRepresentPlaystyle.swift */,
+				17ACC8ED2CD36A8A0047EE09 /* PickStrengths.swift */,
+				17ACC8EB2CD36A4C0047EE09 /* PickWeaknesses.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17ACC8EF2CD36AEC0047EE09 /* SecondQuestionnaire */ = {
+			isa = PBXGroup;
+			children = (
+				17ACC8F02CD36AF40047EE09 /* Views */,
+			);
+			path = SecondQuestionnaire;
+			sourceTree = "<group>";
+		};
+		17ACC8F02CD36AF40047EE09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17ACC8F12CD36B060047EE09 /* SecondQuestionnaireView.swift */,
+				176D15072CD490E200450F85 /* YesNoTeam.swift */,
+				179D4FAA2CD5E7F900F7E4AB /* TimelineGoal.swift */,
+				179D4FAC2CD5E82800F7E4AB /* TrainingDays.swift */,
+				179D4FA82CD5E7DB00F7E4AB /* TrainingLevel.swift */,
+				176D15042CD4907000450F85 /* PickGoal.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17CBE91A2CE09F230094DC58 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		17E6931C2C743AC4006B58A3 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				17E693192C743662006B58A3 /* CameraManager.swift */,
+				17E6931F2C74560E006B58A3 /* CIImage+Extension.swift */,
+				17E6931D2C743ADC006B58A3 /* CMSampleBuffer+Extension.swift */,
+				17E693212C745811006B58A3 /* ViewModel.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		43985E502CB51DEC00BE2AB6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				43985E512CB51E1100BE2AB6 /* Poppins-Bold.ttf */,
+				43985E532CB5A9A600BE2AB6 /* PottaOne-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		439A72632C9FA55700B4C5AD /* RiveAssets */ = {
+			isa = PBXGroup;
+			children = (
+				43985E462CB4EFA200BE2AB6 /* tekk_intro.riv */,
+				43985E592CB5B0BB00BE2AB6 /* test_panting.riv */,
+			);
+			path = RiveAssets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		174936152C3E102B001163B9 /* BravoBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1749363B2C3E1032001163B9 /* Build configuration list for PBXNativeTarget "BravoBall" */;
+			buildPhases = (
+				174936122C3E102B001163B9 /* Sources */,
+				174936132C3E102B001163B9 /* Frameworks */,
+				174936142C3E102B001163B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BravoBall;
+			productName = Tekk;
+			productReference = 174936162C3E102B001163B9 /* BravoBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		174936262C3E1032001163B9 /* BravoBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1749363E2C3E1032001163B9 /* Build configuration list for PBXNativeTarget "BravoBallTests" */;
+			buildPhases = (
+				174936232C3E1032001163B9 /* Sources */,
+				174936242C3E1032001163B9 /* Frameworks */,
+				174936252C3E1032001163B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				174936292C3E1032001163B9 /* PBXTargetDependency */,
+			);
+			name = BravoBallTests;
+			productName = TekkTests;
+			productReference = 174936272C3E1032001163B9 /* BravoBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		174936302C3E1032001163B9 /* BravoBallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 174936412C3E1032001163B9 /* Build configuration list for PBXNativeTarget "BravoBallUITests" */;
+			buildPhases = (
+				1749362D2C3E1032001163B9 /* Sources */,
+				1749362E2C3E1032001163B9 /* Frameworks */,
+				1749362F2C3E1032001163B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				174936332C3E1032001163B9 /* PBXTargetDependency */,
+			);
+			name = BravoBallUITests;
+			productName = TekkUITests;
+			productReference = 174936312C3E1032001163B9 /* BravoBallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1749360E2C3E102B001163B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					174936152C3E102B001163B9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					174936262C3E1032001163B9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 174936152C3E102B001163B9;
+					};
+					174936302C3E1032001163B9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 174936152C3E102B001163B9;
+					};
+				};
+			};
+			buildConfigurationList = 174936112C3E102B001163B9 /* Build configuration list for PBXProject "BravoBall" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1749360D2C3E102B001163B9;
+			packageReferences = (
+				1793CEDD2CEBF64000A905E3 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
+			productRefGroup = 174936172C3E102B001163B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				174936152C3E102B001163B9 /* BravoBall */,
+				174936262C3E1032001163B9 /* BravoBallTests */,
+				174936302C3E1032001163B9 /* BravoBallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		174936142C3E102B001163B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174936222C3E1031001163B9 /* Preview Assets.xcassets in Resources */,
+				1749361E2C3E1031001163B9 /* Assets.xcassets in Resources */,
+				43985E522CB51E1100BE2AB6 /* Poppins-Bold.ttf in Resources */,
+				43985E5A2CB5B0BB00BE2AB6 /* test_panting.riv in Resources */,
+				43985E542CB5A9A600BE2AB6 /* PottaOne-Regular.ttf in Resources */,
+				43985E472CB4EFA200BE2AB6 /* tekk_intro.riv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174936252C3E1032001163B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1749362F2C3E1032001163B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		174936122C3E102B001163B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179CF9562CD731B100D07E49 /* SelectionListItem.swift in Sources */,
+				175049412CDD69B00030CF3E /* SelectAgeRange.swift in Sources */,
+				17E693222C745811006B58A3 /* ViewModel.swift in Sources */,
+				43985E3F2CB4EDE700BE2AB6 /* CameraView.swift in Sources */,
+				17ACC8E82CD3696D0047EE09 /* FirstQuestionnaireView.swift in Sources */,
+				179CF9622CD74EC800D07E49 /* MainTabView.swift in Sources */,
+				179D4FAD2CD5E82800F7E4AB /* TrainingDays.swift in Sources */,
+				17E693202C74560E006B58A3 /* CIImage+Extension.swift in Sources */,
+				170217BB2C89030500DD020C /* Models.swift in Sources */,
+				179D4FAB2CD5E7F900F7E4AB /* TimelineGoal.swift in Sources */,
+				17ACC8EE2CD36A8A0047EE09 /* PickStrengths.swift in Sources */,
+				175049452CDD69DD0030CF3E /* SelectLevel.swift in Sources */,
+				175049432CDD69CC0030CF3E /* SelectPosition.swift in Sources */,
+				179CF9602CD7326500D07E49 /* PostOnboardingLoadingView.swift in Sources */,
+				179CF9582CD731C400D07E49 /* DropdownMenu.swift in Sources */,
+				1749361C2C3E102B001163B9 /* ContentView.swift in Sources */,
+				17ACC8DC2CD3681B0047EE09 /* OnboardingView.swift in Sources */,
+				173B40242CD6F55A003C560D /* OnboardingData.swift in Sources */,
+				17C3A5352CD88D8800A64BC5 /* HomeProgramView.swift in Sources */,
+				17ACC8EC2CD36A4C0047EE09 /* PickWeaknesses.swift in Sources */,
+				176D15082CD490E200450F85 /* YesNoTeam.swift in Sources */,
+				179CF9522CD712CA00D07E49 /* OnboardingService.swift in Sources */,
+				176D15012CD4799C00450F85 /* LoginView.swift in Sources */,
+				43985E432CB4EE6800BE2AB6 /* SettingsView.swift in Sources */,
+				176D15052CD4907000450F85 /* PickGoal.swift in Sources */,
+				43985E3D2CB4EDD300BE2AB6 /* ChatbotView.swift in Sources */,
+				173B40212CD6F501003C560D /* OnboardingStateManager.swift in Sources */,
+				17ACC8EA2CD369FF0047EE09 /* PlayerRepresentPlaystyle.swift in Sources */,
+				17F5D6562CD347AE008E8C24 /* GlobalSettings.swift in Sources */,
+				179CF94F2CD7077F00D07E49 /* BravoBall.swift in Sources */,
+				17ACC8F22CD36B060047EE09 /* SecondQuestionnaireView.swift in Sources */,
+				43985E412CB4EE0200BE2AB6 /* PlayerDetailsForm.swift in Sources */,
+				179CF95A2CD731E200D07E49 /* SelectionListView.swift in Sources */,
+				175049472CDD6A170030CF3E /* WelcomeView.swift in Sources */,
+				17E6931E2C743ADC006B58A3 /* CMSampleBuffer+Extension.swift in Sources */,
+				17E6931A2C743662006B58A3 /* CameraManager.swift in Sources */,
+				17F5D6542CD3477E008E8C24 /* ColorExtension.swift in Sources */,
+				179D4FA92CD5E7DB00F7E4AB /* TrainingLevel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174936232C3E1032001163B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1749362C2C3E1032001163B9 /* TekkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1749362D2C3E1032001163B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174936362C3E1032001163B9 /* TekkUITests.swift in Sources */,
+				174936382C3E1032001163B9 /* TekkUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		174936292C3E1032001163B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 174936152C3E102B001163B9 /* BravoBall */;
+			targetProxy = 174936282C3E1032001163B9 /* PBXContainerItemProxy */;
+		};
+		174936332C3E1032001163B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 174936152C3E102B001163B9 /* BravoBall */;
+			targetProxy = 174936322C3E1032001163B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		174936392C3E1032001163B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1749363A2C3E1032001163B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1749363C2C3E1032001163B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tekk/Tekk.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Tekk/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tekk/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Record soccer player and give feedback";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ConklinOfficial.Tekk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1749363D2C3E1032001163B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tekk/Tekk.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Tekk/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tekk/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Record soccer player and give feedback";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ConklinOfficial.Tekk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1749363F2C3E1032001163B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ConklinOfficial.TekkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BravoBall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BravoBall";
+			};
+			name = Debug;
+		};
+		174936402C3E1032001163B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ConklinOfficial.TekkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BravoBall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BravoBall";
+			};
+			name = Release;
+		};
+		174936422C3E1032001163B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ConklinOfficial.TekkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tekk;
+			};
+			name = Debug;
+		};
+		174936432C3E1032001163B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ConklinOfficial.TekkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tekk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		174936112C3E102B001163B9 /* Build configuration list for PBXProject "BravoBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174936392C3E1032001163B9 /* Debug */,
+				1749363A2C3E1032001163B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1749363B2C3E1032001163B9 /* Build configuration list for PBXNativeTarget "BravoBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1749363C2C3E1032001163B9 /* Debug */,
+				1749363D2C3E1032001163B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1749363E2C3E1032001163B9 /* Build configuration list for PBXNativeTarget "BravoBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1749363F2C3E1032001163B9 /* Debug */,
+				174936402C3E1032001163B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		174936412C3E1032001163B9 /* Build configuration list for PBXNativeTarget "BravoBallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174936422C3E1032001163B9 /* Debug */,
+				174936432C3E1032001163B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1793CEDD2CEBF64000A905E3 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.7;
+			};
+		};
+		435A70132CA7A33B00BFCC40 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		435A70142CA7AB2600BFCC40 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 435A70132CA7A33B00BFCC40 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1749360E2C3E102B001163B9 /* Project object */;
+}
