@@ -242,15 +242,12 @@ struct SecondQuestionnaireView: View {
                 skillLevel: chosenLevel.first ?? "",
                 trainingDays: chosenDays
             )
-            submitOnboardingData()
-//            withAnimation {
-//                showHomeProgramView = true  <#code#>
-//            }
+            goToLoadingView()
             // TODO: Handle navigation after successful submission
         }
     }
 
-    private func submitOnboardingData() {
+    private func goToLoadingView() {
         showLoadingView = true
     }
 }

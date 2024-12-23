@@ -14,6 +14,8 @@ struct HomeProgramView: View {
     @StateObject private var globalSettings = GlobalSettings()
     @State private var selectedWeek: Int = 1
     @State private var showWeekSelector = false
+    @State private var selectedTab = 0
+    
     
     // Sample data structures
     struct WeekCard: Identifiable {

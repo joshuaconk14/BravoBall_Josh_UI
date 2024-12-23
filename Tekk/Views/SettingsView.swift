@@ -178,3 +178,10 @@ struct SettingsView_Previews: PreviewProvider {
         }
     }
 }
+
+
+struct SettingsPreview: PreviewProvider {
+    static var previews: some View {
+        SettingsView()
+    }
+}
